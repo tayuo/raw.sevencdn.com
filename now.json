@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "routes": [
+  	{ "handle": "filesystem" },
+  	{ "src": "/", "dest": "/index.html" },
+  	{ "src": "/opencv/(.*)", "dest": "/404.html"},
+  	{ "src": "/([a-zA-Z0-9-]+)/([a-zA-Z0-9-]+)/blob/([a-zA-Z0-9-]+)/(.*)", "dest": "https://https://raw.githubusercontent.com/$1/$2/$3/$4"},
+  	{ "src": "/(.*)", "dest": "https://https://raw.githubusercontent.com/$1"}
+  ]
+}
