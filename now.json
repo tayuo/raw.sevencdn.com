@@ -3,7 +3,7 @@
   "routes": [
   	{ "handle": "filesystem" },
   	{ "src": "/", "dest": "/index.html" },
-  	{ "src": "/(opencv|wj2008|topjohnwu|HashVPN|TCatCloud)/(.*)", "dest": "/404.html"},
+  	{ "src": "/(opencv|wj2008|topjohnwu|HashVPN|TCatCloud)/([a-zA-Z0-9-]+)/([a-zA-Z0-9-]+)/(.*)", "status": 308, "headers": { "Location": "https://cdn.jsdelivr.net/gh/$1/$2@$3/$4" }},
   	{ "src": "/([a-zA-Z0-9-]+)/([a-zA-Z0-9-]+)/blob/([a-zA-Z0-9-]+)/(.*)", "dest": "https://raw.githubusercontent.com/$1/$2/$3/$4"},
   	{ "src": "/(.*)", "dest": "https://raw.githubusercontent.com/$1"}
   ]
