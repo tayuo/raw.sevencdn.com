@@ -3,7 +3,7 @@
   "routes": [
   	{ "handle": "filesystem" },
   	{ "src": "/", "dest": "/index.html" },
-  	{ "src": "/(opencv|wj2008|topjohnwu|HashVPN|TCatCloud|HEU-F8-PRACTICE|acadsocA|hq450)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/(.*)", "status": 308, "headers": { "Location": "https://cdn.jsdelivr.net/gh/$1/$2@$3/$4" }},
+  	{ "src": "/(opencv|wj2008|topjohnwu|HashVPN|TCatCloud|HEU-F8-PRACTICE|acadsocA|hq450|getlantern|finest-cy|Loyalsoldier)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/(.*)", "status": 308, "headers": { "Location": "https://cdn.jsdelivr.net/gh/$1/$2@$3/$4" }},
   	{ "src": "/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/blob/([a-zA-Z0-9_-]+)/(.*)", "dest": "https://raw.githubusercontent.com/$1/$2/$3/$4"},
   	{ "src": "/(.*)", "dest": "https://raw.githubusercontent.com/$1"}
   ]
