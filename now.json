@@ -6,6 +6,6 @@
   	{ "src": "/(opencv|wj2008|topjohnwu|HashVPN|TCatCloud|HEU-F8-PRACTICE|acadsocA|hq450|getlantern|finest-cy|Loyalsoldier)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/(.*)", "status": 308, "headers": { "Location": "https://cdn.jsdelivr.net/gh/$1/$2@$3/$4" }},
   	{ "src": "/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/blob/([a-zA-Z0-9_-]+)/(.*)", "status": 308, "headers": { "Location": "https://cdn.jsdelivr.net/gh/$1/$2@$3/$4"} },
     { "src": "/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/(.*)", "status": 308, "headers": { "Location": "https://cdn.jsdelivr.net/gh/$1/$2@$3/$4"} },
-  	{ "src": "/(.*)", "dest": "/403.png"}
+  	{ "src": "/(.*)", "dest": "/404.html"}
   ]
 }
