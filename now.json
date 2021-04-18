@@ -3,7 +3,7 @@
   "routes": [
   	{ "handle": "filesystem" },
   	{ "src": "/", "dest": "/index.html" },
-  	{ "src": "/(tayuo|ygbhf|imagehosted|7ednet|openrepos|startsocks|staticdn-net|tootssocial)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/(.*)", "dest": "https://raw.githubusercontent.com/$1/$2/$3/$4" },
+  	{ "src": "/(tayuo|ygbhf|imagehosted|7ednet|openrepos|startsocks|staticdn-net|tootssocial|ylx2016)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/(.*)", "dest": "https://raw.githubusercontent.com/$1/$2/$3/$4" },
   	{ "src": "/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/blob/([a-zA-Z0-9_-]+)/(.*)", "status": 308, "headers": { "Location": "https://raw.githubusercontents.com/$1/$2/$3/$4"} },
     { "src": "/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/(.*)", "status": 308, "headers": { "Location": "https://raw.githubusercontents.com/$1/$2/$3/$4"} },
   	{ "src": "/(.*)", "status": 308, "headers": { "Location": "https://raw.githubusercontents.com/$1"} }
